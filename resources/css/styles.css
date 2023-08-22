@@ -33,9 +33,15 @@ header{
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  color: black;
-  background-color: white;
-  opacity: 0.2;
+  color: rgb(81, 81, 81);
+  background-color: rgba(255, 255, 255);
+  z-index: 3;
+  width: 100%;
+  height: 5rem;
+}
+
+header h4, .menu-bar{
+  margin: 0rem 0.5rem;
 }
 
 .menu-bar{
@@ -47,36 +53,64 @@ header{
 
 
 .banner-sec{
-  background-image: url("../images/banner.jpg");
   width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.banner-img-container{
+  background-image: url("../images/banner.jpg");
+  /* background-position: center; */
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .banner-info-container{
   position: absolute;
-  left: 0.5rem;
+  left: 5rem;
+  bottom: 15rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 25%;
+  text-align: center;
+  width: 23rem;
 }
 
-.banner-info-container h4{
+.banner-info-container h1{
   font-weight: 500;
+  line-height: 1.5;
+}
+
+.banner-info-container h5{
+  line-height: 1.5;
 }
 
 .banner-info-container button{
   border: 0.5px solid white;
-  color: transparent;
-  width: 10%;
+  background-color: transparent;
+  color: white;
+  width: 10rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 2.5rem;
+  margin-top: 0.5rem;
 }
 
 .quote-sec{
   width: 100%;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .quote-container{
-  width: 75%;
+  width: 70%;
+  height: auto;
   color: black;
+  line-height: 1.5;
 }
 
 .quote-container h4{
@@ -87,29 +121,41 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* justify-content: center; */
   gap: 2rem;
-  width: 80%;
+  width: 100%;
+  /* height: cal(100vh - 5rem); */
+  background-image: url("../images/about-us.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .about-us-sec h1{
   font-weight: 500;
+  font-size: 2rem;
+  margin-top: 10rem;
 }
 
 .about-us-sec .info-container{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 2rem;
   width: 100%;
 }
 
 .about-us-sec .info-container .info-card{
-  min-width: 20%;
+  width: 23rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+  text-align: center;
   gap: 0.5rem;
-  background-color: white;
-  opacity: 10%;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 18rem;
 }
 
 .about-us-sec .info-container .info-card h2{
@@ -124,10 +170,12 @@ header{
 }
 
 .events-sec .event-card{
-  position: absolute;
+  /* position: absolute;
   left: 2rem;
   bottom: 1rem;
   font-weight: 500;
+  width: 100%;
+  height: 20vh */
 }
 
 .water-tracing{
@@ -157,30 +205,30 @@ header{
   align-items: center;
 }
 
-.footer{
+footer{
   width: 100%;
   height: 19rem;
 }
 
-.footer .info-container{
+footer .info-container{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.footer .info-container .social-links-container{
+footer .info-container .social-links-container{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
 
-.footer .info-container .social-links-container img{
+footer .info-container .social-links-container img{
   width: 2.5rem;
   height: auto;
 }
 
-.footer p{
+footer p{
   opacity: 0.8;
   text-align: left;
 }
