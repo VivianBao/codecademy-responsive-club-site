@@ -1,0 +1,270 @@
+body {
+  font-size: 20px;
+  color: white;
+  font-family: Lora, "sans-serif";
+}
+
+h1{
+  font-size: 1.9rem;
+}
+
+h2{
+  font-size: 1.8rem;
+}
+
+h3{
+  font-size: 1.7rem;
+}
+
+h4{
+  font-size: 1.5rem;
+}
+
+h5{
+  font-size: 1.3rem;
+}
+
+section {
+  height: 100vh;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  color: rgb(81, 81, 81);
+  background-color: rgba(255, 255, 255);
+  z-index: 3;
+  width: 100%;
+  height: 5rem;
+}
+
+header h4, .menu-bar{
+  margin: 0rem 0.5rem;
+}
+
+.menu-bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+.banner-sec{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.banner-img-container{
+  background-image: url("../images/banner.jpg");
+  /* background-position: center; */
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.banner-info-container{
+  position: absolute;
+  left: 5rem;
+  bottom: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 23rem;
+}
+
+.banner-info-container h1{
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.banner-info-container h5{
+  line-height: 1.5;
+}
+
+.banner-info-container button{
+  border: 0.5px solid white;
+  background-color: transparent;
+  color: white;
+  width: 10rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 2.5rem;
+  margin-top: 0.5rem;
+}
+
+.quote-sec{
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-container{
+  width: 70%;
+  height: auto;
+  color: black;
+  line-height: 1.5;
+}
+
+.quote-container h4{
+  text-align: right;
+}
+
+.about-us-sec{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 2rem;
+  width: 100%;
+  /* height: cal(100vh - 5rem); */
+  background-image: url("../images/about-us.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.about-us-sec h1{
+  font-weight: 500;
+  font-size: 2rem;
+  margin-top: 10rem;
+}
+
+.about-us-sec .info-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+}
+
+.about-us-sec .info-container .info-card{
+  width: 23rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+  text-align: center;
+  gap: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 18rem;
+}
+
+.about-us-sec .info-container .info-card h2{
+  font-weight: 500;
+}
+
+.events-sec{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: end;
+  width: 100%;
+  height: 100vh;
+}
+
+.events-sec .event-card{
+  font-weight: 500;
+  width: 100%;
+  height: 30%;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.events-sec .event-card .event-card-info{
+  width: 25%;
+  margin-left: 5rem;
+  line-height: 1.5;
+}
+
+.water-tracing{
+  background-image: url("../images/water-tracing.jpg");
+  background-position: center;
+}
+
+.camping{
+  background-image: url("../images/camping.jpg");
+  background-position: center top -40rem;
+}
+
+.hiking{
+  background-image: url("../images/hiking.jpg");
+  background-position: center top -40rem;
+}
+
+.join-sec{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  flex-wrap: wrap;
+  height: 20rem;
+  gap: 3rem;
+}
+
+.join-sec .join-btn{
+  border: 0.5px solid #CAC9C9;
+  box-shadow: -2px 2px 8px #CAC9C9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.5;
+  width: 23rem;
+  height: 10rem;
+  padding: 0.5rem;
+}
+
+footer{
+  width: 100%;
+  height: 19rem;
+  background-image: url("../images/footer.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer h1{
+  margin-top: 3rem;
+}
+
+footer .info-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 70%;
+}
+
+footer .info-container div p{
+  text-align: center;
+}
+
+footer .info-container .social-links-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .info-container .social-links-container img{
+  width: 2.5rem;
+  height: auto;
+  color: white;
+}
+
+footer .disclaimer{
+  opacity: 0.8;
+  text-align: left;
+}
