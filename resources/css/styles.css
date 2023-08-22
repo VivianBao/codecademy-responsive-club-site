@@ -301,6 +301,7 @@ header h4, .menu-bar{
   width: 25%;
   margin-left: 5rem;
   line-height: 1.5;
+  text-shadow: 1px 1px 8px black;
 }
 
 .water-tracing{
@@ -316,6 +317,28 @@ header h4, .menu-bar{
 .hiking{
   background-image: url("../images/hiking.jpg");
   background-position: center top -40rem;
+}
+
+@media only screen and (max-width: 1313px){
+  .camping {
+    background-position: center;
+  }
+
+  .hiking {
+    background-position: center;
+  }
+}
+
+@media only screen and (max-width: 814px) {
+  .events-sec .event-card .event-card-info{
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .events-sec .event-card .event-card-info {
+    margin-left: 2rem;
+  }
 }
 
 .join-sec{
@@ -342,6 +365,29 @@ header h4, .menu-bar{
   padding: 0.5rem;
 }
 
+@media only screen and (max-width: 819px) {
+  .join-sec{
+    height: auto;
+    padding: 3rem;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  .join-sec .join-btn h1 {
+    font-size: 1.6rem;
+  }
+
+  .join-sec .join-btn h5 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 537px) {
+  .join-sec .join-btn{
+    width: 18rem;
+  }
+}
+
 footer{
   width: 100%;
   height: 19rem;
@@ -350,6 +396,7 @@ footer{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-shadow: 1px 1px 8px black;
 }
 
 footer h1{
@@ -384,4 +431,27 @@ footer .info-container .social-links-container img{
 footer .disclaimer{
   opacity: 0.8;
   text-align: left;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 819px) {
+  footer h1{
+    font-size: 1.6rem;
+  }
+  footer .info-container div p{
+    font-size:1rem;
+  }
+  footer .disclaimer{
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  .join-sec .join-btn h1 {
+    font-size: 1.6rem;
+  }
+
+  .join-sec .join-btn h5 {
+    font-size: 1rem;
+  }
 }
