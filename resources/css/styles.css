@@ -445,13 +445,3 @@ footer .disclaimer{
     font-size: 0.8rem;
   }
 }
-
-@media only screen and (max-width: 639px) {
-  .join-sec .join-btn h1 {
-    font-size: 1.6rem;
-  }
-
-  .join-sec .join-btn h5 {
-    font-size: 1rem;
-  }
-}
